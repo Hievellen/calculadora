@@ -58,7 +58,7 @@ public class CalculadoraController implements Initializable {
     private void Adicao(ActionEvent event) {
        Double num1 = Double.parseDouble(txtNum1.getText()); 
        Double num2 = Double.parseDouble(txtNum1.getText()); 
-       Double result = num1 + num2; 
+       Double result = (num1 + num2); 
        txtResultado.setText(result.toString());
        
     }
@@ -67,7 +67,7 @@ public class CalculadoraController implements Initializable {
     private void Subtracao(ActionEvent event) {
         Double num1 = Double.parseDouble(txtNum1.getText()); 
         Double num2 = Double.parseDouble(txtNum1.getText()); 
-        Double result = num1 - num2;
+        Double result = (num1 - num2);
         txtResultado.setText(result.toString());
 
     }
@@ -76,7 +76,7 @@ public class CalculadoraController implements Initializable {
     private void Divisao(ActionEvent event) {
         Double num1 = Double.parseDouble(txtNum1.getText()); 
         Double num2 = Double.parseDouble(txtNum1.getText()); 
-        Double result = num1 / num2;
+        Double result = (num1 / num2);
         txtResultado.setText(result.toString());
 
     }
@@ -85,7 +85,7 @@ public class CalculadoraController implements Initializable {
     private void Multiplicacao(ActionEvent event) {
         Double num1 = Double.parseDouble(txtNum1.getText()); 
         Double num2 = Double.parseDouble(txtNum1.getText()); 
-        Double result = num1 * num2;
+        Double result = (num1 * num2);
         txtResultado.setText(result.toString());
        
     }

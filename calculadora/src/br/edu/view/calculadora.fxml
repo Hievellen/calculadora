@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.cell.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="359.0" prefWidth="564.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.control.CalculadoraController">
+   <children>
+      <TableView fx:id="tableHistorico" layoutX="235.0" layoutY="21.0" prefHeight="316.0" prefWidth="316.0">
+         <columns>
+            <TableColumn prefWidth="68.0" text="Número 1">
+               <cellValueFactory>
+                  <PropertyValueFactory property="id_cli" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="84.0" text="Número 2 ">
+               <cellValueFactory>
+                  <PropertyValueFactory property="nome_cli" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="87.0" text="Resultado">
+               <cellValueFactory>
+                  <PropertyValueFactory property="cpf_cli" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="94.0" text="Operador">
+               <cellValueFactory>
+                  <PropertyValueFactory property="rg_cli" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Label layoutX="58.0" layoutY="53.0" text="Número 1" />
+      <Label layoutX="58.0" layoutY="98.0" text="Número 2" />
+      <Label layoutX="59.0" layoutY="149.0" text="Resultado" />
+      <TextField fx:id="txtNum1" layoutX="58.0" layoutY="70.0" />
+      <TextField fx:id="txtNum2" layoutX="58.0" layoutY="115.0" />
+      <TextField fx:id="txtResultado" layoutX="58.0" layoutY="166.0" />
+      <Button fx:id="btnAdicao" layoutX="58.0" layoutY="200.0" mnemonicParsing="false" onAction="#Adicao" text="Adição" />
+      <Button fx:id="btnSubtracao" layoutX="120.0" layoutY="200.0" mnemonicParsing="false" onAction="#Subtracao" prefHeight="25.0" prefWidth="87.0" text="Subtração" />
+      <Button fx:id="btnDivisao" layoutX="58.0" layoutY="234.0" mnemonicParsing="false" onAction="#Divisao" text="Divisão" />
+      <Button fx:id="btnMultiplicacao" layoutX="120.0" layoutY="234.0" mnemonicParsing="false" onAction="#Multiplicacao" text="Multiplicação" />
+   </children>
+</AnchorPane>

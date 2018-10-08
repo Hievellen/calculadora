@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.LoginController">
+   <children>
+      <Label layoutX="188.0" layoutY="73.0" text="Login" />
+      <Label layoutX="187.0" layoutY="137.0" text="Senha" />
+      <PasswordField fx:id="txtSenha" layoutX="187.0" layoutY="154.0" />
+      <TextField fx:id="txtLogin" layoutX="188.0" layoutY="90.0" />
+      <Button fx:id="entrar" layoutX="285.0" layoutY="200.0" mnemonicParsing="false" text="Entrar" />
+   </children>
+</AnchorPane>
